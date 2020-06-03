@@ -12,7 +12,9 @@ const itemsController = new ItemsController();
 // index, show, create, update, destroy ////
 
 routes.get('/items', itemsController.index);
+
 routes.post('/points', pointsController.create);
+routes.get('/points', pointsController.index);
 routes.get('/points/:id', pointsController.show);
 
 
